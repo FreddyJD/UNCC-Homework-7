@@ -1,5 +1,69 @@
-#employee-table th,
-        td {
-          display: inline-block;
-          width: 16.575%;
-        }
+/* 
+This is a snip of my private CSS Styling 
+simple video header.
+
+With love Freddy ❤️
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+h1 { 
+  font-weight: 700;
+}
+.freddy-Simple { 
+  font-weight: 300;
+  font-size: 18px;
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.marge { 
+  margin: 5%;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('includes/styles/custom.mp4') black center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
